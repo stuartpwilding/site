@@ -1,15 +1,3 @@
-$ npm init
-
-
-$ npm install gulp --save-dev
-
-$ npm install gulp-concat --save-dev
-
-$ npm install gulp-inject-partials --save-dev
-
-$ npm install gulp-sass --save-dev
-
-$ npm install gulp-sass-glob --save-dev
-
+$ npm install --save-dev gulp gulp-inject-partials gulp-sass gulp-sass-glob gulp-clean-css gulp-concat gulp-uglify gulp-rename
 
 $ gulp watch
