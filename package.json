@@ -1,10 +1,10 @@
 {
   "name": "appName",
   "version": "1.0.0",
-  "description": "Simple gulp based static site generator",
+  "description": "Simple gulp powered static site generator",
   "repository": {
     "type": "git",
-    "url": "https://github.com/stuartpwilding/site"
+    "url": "https://github.com/stuartpwilding/site.git"
   },
   "author": "Stuart Wilding"
 }
