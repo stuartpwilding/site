@@ -44,7 +44,7 @@ ol {
     margin-bottom: 0;
   }
 
-  nav * {
+  nav & {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -103,7 +103,7 @@ button,
 }
 
 ::-moz-placeholder {
-   opacity:  1;
+   opacity: 1;
 }
 
 iframe {

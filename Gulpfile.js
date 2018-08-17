@@ -23,7 +23,7 @@ gulp.task('images', function(){
 gulp.task('styles', function() {
   gulp.src('./src/sass/style.scss')
     .pipe(sassGlob())
-    .pipe(sass().on('error', sass.logError))
+    .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
     .pipe(gulp.dest('./build/css'))
     .pipe(cleanCSS())
     .pipe(rename({ extname: '.min.css' }))
