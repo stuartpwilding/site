@@ -1,0 +1,12 @@
+@mixin word-wrap() {
+    overflow-wrap: break-word;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+
+@mixin ellipse() {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

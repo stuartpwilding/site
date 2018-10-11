@@ -1,0 +1,9 @@
+@mixin hover($transition-duration: $transition-duration-fast) {
+  [data-whatintent="mouse"] & {
+        transition: all $transition-duration;
+
+        &:hover {
+            @content;
+        }
+    }
+}
