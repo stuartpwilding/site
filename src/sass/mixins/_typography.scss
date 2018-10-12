@@ -1,0 +1,40 @@
+// PX to REM Conversion
+// @param {Pixel} $px - Unitless pixel value to be converted into rems.
+
+// Example Usage:
+// margin-bottom: rem(20);
+
+@function rem($px) {
+    @return ($px / 16) * 1rem;
+}
+
+
+
+// Unitless line-height
+// @param {Font Size} $fontSize - Unitless font size
+// @param {Leading}   $leading  - Unitless leading
+
+// Example Usage:
+// @include line-height(16, 20);
+
+@mixin line-height($fontSize, $leading) {
+    line-height: ceil(($leading / $fontSize) * 10000) / 10000;
+}
+
+
+
+// Set font-size and optionally line-height
+// @param {Font Size} $fontSize - Unit-less font size
+// @param {Leading}   $leading  - (default: null) - Optional- Unit-less leading
+
+// Example Usage:
+// p {
+//      @include font-size(12, 14);
+// }
+
+@mixin font-size($fontsize, $leading: null) {
+    font-size: rem($fontsize);
+    @if ($fontsize and $leading) {
+        @include line-height($fontsize, $leading);
+  }
+}
