@@ -39,6 +39,8 @@ gulp.task('scripts', function() {
     .pipe(gulp.dest('./build/js'));
 });
 
+gulp.task('build', ['html', 'images', 'styles', 'scripts']);
+
 gulp.task('watch',function() {
   gulp.watch('src/**/*.html',['html']);
   gulp.watch('src/img/**/*',['images']);
